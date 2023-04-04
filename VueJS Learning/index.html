@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+</head>
+
+<body>
+
+    <!-- <div id="app"> -->
+    <!-- // ✅ Topic 1 : Vue data and element model -->
+    <!-- <p>{{title}}</p>
+        <p>{{isItTrue}}</p>
+        <p>{{cars}}</p>
+        <p>{{robot.name}}</p>
+        <p>{{greeting()}}</p>
+        <p>{{hello()}}</p> -->
+
+    <!--✅ Topic 2 :  Directives: V-bind -->
+    <!-- <img v-bind:src="src" v-bind:alt="alt">
+        <a v-bind:href="link" target="_blank">google</a> -->
+
+    <!--✅ Topic 3 : Conditional Rendering  -->
+
+    <!-- <p v-if="user = 'linkon'">Condition is true : {{user}}</p> -->
+    <!--  Directives: V-show -->
+
+    <!--✅ Topic 4 Loop: V-for -->
+
+    <!-- <p v-for="(value, index, key) in users">
+            {{key}}:{{index}}:{{value}}
+        </p> -->
+    <!-- <p v-for="n in 20">
+            {{n}}
+        </p> -->
+    <!-- 
+        <p v-for="(car, index) in cars">
+            {{index}}:{{car}}
+        </p> -->
+
+    <!-- //  ✅ Topic 5  V-once -->
+
+    <!-- <h1>
+            {{name}}
+        </h1>
+        <h1 v-once>
+            {{name}}
+        </h1>
+        {{update()}} -->
+
+    <!-- //  ✅ Topic 6 Event Use: V-on -->
+
+    <!-- <h1>
+            {{name}}
+        </h1> -->
+    <!-- <button v-on:click="updateName('Brother', $event)">Click me</button> -->
+    <!-- event modifier -->
+    <!-- <button v-on:click.right="updateName('Brother', $event)">Click me</button> -->
+
+    <!-- <div v-on:mousemove="getCoord" class="box">
+            hoverMe
+        </div>
+        <p>X : {{x}}</p>
+        <p>Y : {{y}}</p> -->
+
+
+    <!-- // ✅ Topic 7  V-model  -->
+    <!-- Dynamic value two way blinding -->
+    <!-- <form v-on:submit.prevent="handleForm">
+            <label for="">first name</label>
+            <input type="text" v-model="formData.firstName">
+            <hr>
+            <label for="">last name</label>
+            <input type="text" v-model="formData.lastName">
+            <hr>
+            <button>Submit</button>
+        </form> -->
+
+    <!-- // ✅ Topic 7 Computed Property  -->
+
+    <!-- <button v-on:click="a++"> Add A</button>
+        <button v-on:click="b++"> Add B</button>
+
+        <p>A = {{a}} </p>
+        <p>B = {{b}} </p>
+
+        <p>Salary + A = {{addToA}} </p>
+        <p>Salary + B = {{addToB}} </p> -->
+
+
+    <!-- </div> -->
+
+    <!-- <div id="app1">
+        <h1>This is 1st instance : {{value}} </h1>
+        <button @click="changeValue">Click 1</button>
+    </div>
+    <div id="app2">
+        <h1>This is 2nd instance : {{value}} </h1>
+        <button>Click 2</button>
+    </div> -->
+
+    <!-- //✅ Topic 10 Mount & Template -->
+    <!-- <div id="app"> -->
+    <!-- <p> Name is : {{name}} </p> -->
+    <!-- </div> -->
+    <!-- //✅ Topic 10 Use of Basic Component -->
+    <div id="app">
+        <maincomp />
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+<style>
+    .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+</html>
