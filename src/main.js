@@ -6,4 +6,10 @@ import App from './App.vue'
 
 // export const bus = new Vue({})
 
+// Vue.directive('aswesome', {
+//     bind(el) {
+//         el.innerHtml = "hello"
+//     }
+// })
+
 createApp(App).mount('#app')
