@@ -35,11 +35,12 @@ header h1 {
 }
 
 .task-list {
-  max-width: 640px;
+  max-width: 100%;
   margin: 0 260px;
 }
 
 .task {
+  /* width: 50%; */
   padding: 6px 20px;
   background: rgb(240, 236, 236);
   margin: 10px;
@@ -71,6 +72,22 @@ header h1 {
 
 .countValue {
   text-align: right;
+}
+
+.taskForm {
+  margin-top: 20px;
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.taskForm input {
+  padding: 10px 40px;
+}
+
+.activeFav {
+  color: red;
+  border: 1px solid red;
+  background-color: #F7C743;
 }
 
 /*
