@@ -5,7 +5,7 @@ const getPost = (id) => {
     const error = ref(null)
     const loadData = async () => {
         try {
-            let data = await fetch('http://localhost:3000/posts/' + id)
+            let data = await fetch('https://jsonplaceholder.typicode.com/posts/' + id)
             console.log("✔ post data from server", data)
             if (!data.ok) {
                 throw Error('Data is not avilable right now !')

@@ -1,6 +1,6 @@
 <template>
-    <div class="post-list">
-        <div v-for="post in posts" :key="post.id">
+    <div class="post-list border bg-info">
+        <div class="border m-2 bg-success text-white text-uppercase" v-for="post in posts" :key="post.id">
             <SinglePost :post="post" />
             <!-- <h3>{{ post.title }}</h3> -->
         </div>

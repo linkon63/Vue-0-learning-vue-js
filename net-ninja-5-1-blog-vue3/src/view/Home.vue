@@ -1,15 +1,23 @@
 <template>
     <div class="home">
-        <h1>Home</h1>
+
+        <div class="bg-primary p-5">
+            <h1 class="fw-bold text-white">Blog Page</h1>
+        </div>
+        <div class="border p-2 bg-secondary">
+            <button class="btn btn-info" @click="showPost = !showPost">!Post Toggle</button>
+            <button class="btn btn-danger ms-2" @click="posts.shift()">Delete POST</button>
+        </div>
         <div v-if="error">{{ error }}</div>
         <div v-if="posts.length">
             <PostList v-if="showPost" :posts="posts" />
         </div>
         <div v-else>
-            Loading ........
+            <div class="spinner-border text-primary mt-5" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
         </div>
-        <button @click="showPost = !showPost">! POST</button>
-        <button @click="posts.pop()">Delete POST</button>
+
     </div>
 
     <router-view></router-view>

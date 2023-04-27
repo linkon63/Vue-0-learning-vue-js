@@ -1,7 +1,7 @@
 <template lang="">
     <div class="post">
         <router-link :to="{name : 'Details', params : {id : post.id}}">
-            <h3>{{post.title}}</h3>
+            <h3 class="text-white text-capitalize">{{post.title}}</h3>
         </router-link>
         <p>{{snippet}}</p>
         <span v-for="tag in post.tags" :key="tag">
